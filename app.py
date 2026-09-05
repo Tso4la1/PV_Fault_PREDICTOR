@@ -3,7 +3,7 @@ import pandas as pd
 import joblib
 
 st.set_page_config(page_title="PV Fault Predictor", page_icon="☀️", layout="centered")
-
+@st.cache_resource
 # ---- Load the trained model and the feature list saved from Colab ----
 # Both files must sit in the same folder as this app.py (or be committed to
 # the GitHub repo alongside it) so Streamlit Cloud can find them.
